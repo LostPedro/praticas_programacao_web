@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>HTML 5 tipos de input</title>
+</head>
+
+<body>
+	<header>
+
+	</header>
+	<section>
+		<form>
+			<div class="form-group">
+				<label>Color</label>
+				<input type="color">
+			</div>
+			<div class="form-group">
+				<label>Data</label>
+				<input type="date">
+			</div>
+			<div class="form-group">
+				<label>Data e Tempo</label>
+				<input type="datetime-local">
+			</div>
+			<div class="form-group">
+				<label>Email</label>
+				<input type="email">
+			</div>
+			<div class="form-group">
+				<label>Mes</label>
+				<input type="month">
+			</div>
+			<div class="form-group">
+				<label>Números</label>
+				<input type="number">
+			</div>
+			<div class="form-group">
+				<label>Range</label>
+				<input type="text" id="textinput">
+				<input type="range" onchange="updateTextInput(this.value)">
+				<script>
+					function updateTextInput(num) {
+						document.getElementById("textinput").value = num
+					}
+
+				</script>
+			</div>
+			<div class="form-group">
+				<label>Busca</label>
+				<input type="search">
+			</div>
+			<div class="form-group">
+				<label>Tempo</label>
+				<input type="time">
+			</div>
+			<div class="form-group">
+				<label>Url</label>
+				<input type="url">
+			</div>
+			<div class="form-group">
+				<label>Semana</label>
+				<input type="week">
+			</div>
+			<div class="form-group">
+				<label>Lista</label>
+				<input list="codes" name="code" required>
+				<datalist id="codes">
+				<option value="Javascripts"></option>
+				<option value="Java"></option>
+				<option value="Ruby"></option>
+				<option value="PHP"></option>
+				<option value="Python"></option>
+			</datalist>
+			</div>
+
+
+			<button>Enviar</button>
+
+		</form>
+
+
+	</section>
+
+	<section>
+		<h1> saida </h1>
+		<form oninput="x.value= parseInt (a.value) + parseInt(b.value), y.value= parseInt(a.value)">
+			0
+			<input type="range" id="a" name="a" value="50" max="100" min="0"> 100 +
+			<input type="number" name="b" value="0"> =
+			<output name="x"></output> Range =
+			<output name="y"></output>
+		</form>
+	</section>
+
+	<section>
+		<h1> Auto complete </h1>
+		<P>Desliga ou liga o complete automatico de dados nos campos (ou formulario) com base em dados já inseridos</P>
+		<form>
+			<div class="form-group">
+				<input type="text" name="fname" placeholder="Primeiro Nome">
+			</div>
+			<div class="form-group">
+				<input type="text" name="lname" placeholder="Ultimo Nome">
+			</div>
+			<div class="form-group">
+				<input type="email" name="email" placeholder="Email" autocomplete="off">
+			</div>
+			<button>Enviar</button>
+		</form>
+	</section>
+	
+	<section>
+		<h1> Novalidate Atributes e Autofocus </h1>
+		<p>O novalidate anula a verificação de validação de um campo ou formulario</p>
+		<form>
+		<div class="form-group">
+				<input type="text" name="fname" placeholder="Primeiro Nome" required autofocus>
+			</div>
+			<div class="form-group">
+				<input type="text" name="lname" placeholder="Ultimo Nome" required>
+			</div>
+			<div class="form-group">
+				<input type="email" name="email" placeholder="Email" novalidate>
+			</div>
+			<button>Enviar</button>
+		</form>
+	</section>
+
+<section>
+		<h1> O atributo Formulario </h1>
+		<form id="form1" method="get">
+		<div class="form-group">
+				<input type="text" name="fname" placeholder="Primeiro Nome" required autofocus>
+			</div>
+			<div class="form-group">
+				<input type="text" name="lname" placeholder="Ultimo Nome" required>
+			</div>
+			<div class="form-group">
+				<input type="email" name="email" placeholder="Email" >
+			</div>
+			<button>Enviar</button>
+			<button formnovalidate>Enviar sem validar</button>
+			<button formnovalidate formmethod="post">Enviar troca de metodo</button>
+			<button formnovalidate formaction="post.php">Enviar Ação</button>
+			
+		</form>
+		<input type="color" name="color" form="form1">
+	</section>
+
+</body>
+
+</html>
