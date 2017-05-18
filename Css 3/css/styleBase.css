@@ -32,10 +32,21 @@ header{
     float: left;
 }
 
-.section-example{
-    text-align: center;
-    padding-left: 20px;
+.butoes{
+	height: auto;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 }
+
+.jumbotron {
+			text-align: center;
+			margin-top: 20px;
+			margin-left: auto;
+			background-image: url(../img/1462312474731.jpg);
+			margin-right: auto;
+		}
+
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes animHeader {
@@ -59,6 +70,8 @@ header{
     100% {background-color: rgb(107, 167, 163);}
 }
 
+
+
 .secao-exemplo{
 	text-align: center;
 	padding-left: 20px;
@@ -66,14 +79,15 @@ header{
 	
 /* Chrome, Safari, Opera */
 @-webkit-keyframes animWelcome {
-    0%   {opacity: 0;}
+	
+    0%   {opacity: 0.4;}
     90%  {opacity: 0.6;}
     100% {opacity: 1.0;}
 }
 
 /* Standard syntax */
 @keyframes animWelcome {
-    0%   {opacity: 0;}
+    0%   {opacity: 0.4;}
     90%  {opacity: 0.6;}
     100% {opacity: 1.0;}
 }
