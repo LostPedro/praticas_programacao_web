@@ -216,4 +216,196 @@ text-shadow: 1px -13px 6px #000000, 3px 10px 5px #AAF;
 color: white;
 text-shadow: 1px 1px 2px black, 0 0 25px #14D61A, 0 0 5px darkblue;
 }
+div.card{
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px 10px rgba(0,0,0,0.19);
+}
+div.header1{
+	background-color: cornflowerblue;
+	color: white;
+	padding: 10px;
+	font-size: 30px;
+}
+div.container{
+	padding: 5px
+}
+
+.text1{
+	white-space: nowrap;
+	width: 200px;
+	border: 1px solid black;
+	overflow: hidden;
+	text-overflow: clip;
+}
+.text2{
+	white-space: nowrap;
+	width: 200px;
+	border: 1px solid black;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.text3{
+	white-space: nowrap;
+	width: 200px;
+	border: 1px solid black;
+	overflow: hidden;
+}
+.text3:hover{
+	text-overflow: inherit;
+	overflow: visible;
+}
+.text4{
+	width: 140px;
+	border: 1px solid black;
+	word-break: keep-all;
+}
+.text5{
+	width: 140px;
+	border: 1px solid black;
+	word-break: break-all;
+}
+.text6{
+	width: 140px;
+	border: 1px solid black;
+	word-wrap: break-word;
+}
+.text7{
+	width: 140px;
+	border: 1px solid black;
+	word-wrap: normal;
+}
+
+.font1{
+	font-size: 30px;
+	font-family: 'Pacifico', cursive;
+	font-family: 'Orbitron', sans-serif;
+}
+.font2{
+	font-size: 30px;
+	font-family: 'Pacifico', cursive;
+}
+@font-face{
+	font-family: "FontA";
+	src: url(../fonts/ARDESTINE.ttf);
+}
+@font-face{
+	font-family: "FontB";
+	src: url(../fonts/BeautifulCreatures.ttf);
+}
+.font3{
+	font-size: 30px;
+	font-family: FontA;
+}
+.font4{
+	font-size: 30px;
+	font-family: FontB;
+}
+
+.element1{
+    width: 200px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #444;
+    color: white;
+    -webkit-transition: background-color 2s, width 3s;
+    transition: background-color 2s, width 3s;
+}
+.transicao1{
+	-webkit-transition-timing-function: ease;
+	transition-timing-function: ease;
+}
+.transicao2{
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.transicao3{
+	-webkit-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+}
+.transicao4{
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.transicao5{
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+.transicao6{
+	-webkit-transition-timing-function: cubic-bezier(0.4,2,0.2,1);
+	transition-timing-function: cubic-bezier(0.4,2,0.2,1);
+}
+.transicao7{
+	-webkit-transition-delay: 3s;
+	transition-delay: 3s;
+}
+.element1:hover{
+	width: 500px;
+	 background-color: #462;
+}
+.element2{
+    width: 200px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #444;
+    color: white;
+    -webkit-transition: background-color 2s, width 3s;
+    transition: width 2s, height 2s, transform 2s;
+}
+.element2:hover{
+	width: 300px;
+	height: 300px;
+	-webkit-transform:rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.player{
+	position: relative;
+	animation-name: animation1;
+	animation-duration: 4s;
+}
+
+.player-body{
+	width: 0px;
+	height: 0px;
+	border-right: 61px solid transparent;
+	border-top: 92px solid green;
+	border-left: 61px solid green ;
+	border-bottom: 27px solid green; 
+	border-top-right-radius: 50px;
+	border-top-left-radius: 139px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.player-eye{
+	position: absolute;
+	left:72px;
+	top:27px;
+	-moz-border-radius: 100%;
+	-webkit-border-radius:100%;
+	border-radius: 100%;
+	background-color: white;
+	width: 35px;
+	height: 27px;
+}
+
+@keyframes animation1{
+	from{
+		transform: translate(0,0);
+	}
+	to{
+		transform: translate(800px,0);
+	}
+}
+
+@keyframes animation2{
+	0%{}
+	25%{}
+	50%{}
+	100%{}
+}
+
 

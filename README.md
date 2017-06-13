@@ -1,2 +1,4 @@
 # praticas_programacao_web
-Praticas de varias linguagens de programação
+Web development practices
+1-Html 5
+2-CSS 3
