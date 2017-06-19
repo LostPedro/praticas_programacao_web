@@ -1,4 +1,4 @@
-# praticas_programacao_web
-Web development practices
-1-Html 5
-2-CSS 3
+# Web development practices
+-Html 5
+-CSS 3
+-Angular
